@@ -23,7 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: casaone_assignment_development
+  username: postgres
+  password:
+  database: postgres
+  host: db
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
